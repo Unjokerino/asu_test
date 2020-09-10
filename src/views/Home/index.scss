@@ -1,0 +1,67 @@
+.form {
+    margin: auto;
+    max-width: 700px;
+    border-radius: 6px;
+    overflow: hidden;
+
+    &__header {
+        background: #47adb6;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+    }
+
+    &__search-container {
+        width: 100%;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: row;
+
+        select {
+            flex: 1;
+            padding: 10px
+        }
+    }
+
+    &__table {
+        border: 1px solid #f1f1f1;
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+            background: #47adb6;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f1f1f1;
+        }
+
+        td {
+            border: 1px solid #f1f1f1;
+            padding: 10px
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &_expand {
+            transform: rotate(45deg);
+        }
+    }
+}
